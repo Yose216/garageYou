@@ -1,0 +1,10 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% for voiture in voitures %}
+<h2>{{ voiture.model }} {{ voiture.marque }}</h2>
+{% endfor %}
+{% endblock %}
+
